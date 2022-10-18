@@ -13,13 +13,12 @@
 }
 
 .feature-item h1 {
-    font-size: 3vw;
+    font-size: 3em;
 }
 
 .feature-item h2 {
-    font-family: netflix;
     font-weight: 100;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 
 #txt {
@@ -32,7 +31,32 @@
 }
 
 @media (max-width: 700px) {
-    .feature-item video {
-        width: 200px;
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+
+        width: 100vw;
+        height: 450px;
+        padding: 10px;
     }
+
+    #txt {
+        text-align: center;
+
+        width: 90vw;
+    }
+
+    .feature-item h1,
+    h2 {
+        font-size: 2em;
+    }
+
+    .feature-item video {
+        width: 300px;
+    }
+
 }
