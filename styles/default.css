@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --NetRed: #e50914;
+}
+
+@font-face {
+    font-family: netflix;
+    src: url(../netflix-sans-font/NetflixSans-Regular.otf) format('opentype');
+}
+
+body {
+    background-color: #222;
+}
+
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body,
+main {
+    font-family: netflix;
+
+    width: 100vw;
+}
+
+.container {
+    margin-bottom: 10px;
+}

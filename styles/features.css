@@ -1,0 +1,38 @@
+.feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+
+    width: 100vw;
+    height: 450px;
+    padding: 20px;
+}
+
+.feature-item h1 {
+    font-size: 3vw;
+}
+
+.feature-item h2 {
+    font-family: netflix;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+#txt {
+    width: 35vw;
+}
+
+.feature-item img,
+.feature-item video {
+    width: 400px;
+}
+
+@media (max-width: 700px) {
+    .feature-item video {
+        width: 200px;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles\home.css">
+    <link rel="stylesheet" href="styles/features.css">
+
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <section class="container" id="sec1">
+            <div id="bg"></div>
+            <div id="gradient"></div>
+
+            <nav>
+                <div id="navitens">
+                    <img id="logo" src="imgs/Netflix-Brand-Logo.png" alt="Netflix Logo">
+                    <div id="navbtns">
+                        <select name="lang" id="lang">
+                            <option value="en">English</option>
+                            <option value="pt">Portguês</option>
+                        </select>
+                        <a href="index.html"><button>Sign In</button></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="main-content">
+
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+
+                <div id="input-email">
+
+                    <label for="email" id="email-label">Email address</label>
+                    <input type="email" name="email" id="email">
+                    <button id="desktop">Get Started ></button>
+                </div>
+                <button id="mobile">Get Started ></button>
+
+                <script>
+
+                    $(document).ready(function ()
+                    {
+
+                        $("#email").focusin(() =>
+                        {
+                            $("#email-label")
+                                .css('transform', 'translateY(10px)')
+                                .css('fontSize', '12px')
+                        })
+
+                        $("#email").focusout(() =>
+                        {
+                            if ($("#email").val() == "")
+                            {
+                                $("#email-label")
+                                    .css('transform', 'translateY(20px)')
+                                    .css('fontSize', '15px')
+                            }
+                        })
+                    })
+
+                </script>
+
+            </div>
+        </section>
+
+
+        <section class="container">
+
+            <section class="feature-item">
+                <div id="txt">
+                    <h1>Enjoy on your TV.</h1>
+                    <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
+                </div>
+
+                <video src="videos/video-tv-1.m4v" autoplay loop muted></video>
+            </section>
+
+        </section>
+
+        <section class="container">
+
+            <section class="feature-item">
+                <div id="mobile-card">
+                    <div id="txt">
+                        <h1>Download your shows to watch offline.</h1>
+                        <h2>Save your favorites easily and always have something to watch.</h2>
+                    </div>
+            </section>
+
+        </section>
+    </main>
+</body>
+
+</html>

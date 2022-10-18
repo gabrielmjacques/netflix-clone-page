@@ -1,0 +1,170 @@
+button {
+    cursor: pointer;
+}
+
+#bg,
+#gradient {
+    position: absolute;
+
+    width: 100vw;
+    height: 800px;
+}
+
+#bg {
+    background-size: cover;
+
+    z-index: -2;
+
+    filter: brightness(40%);
+    background-image: url('../imgs/bg.jpg');
+}
+
+#gradient {
+    z-index: -1;
+
+    background-image: linear-gradient(to bottom, transparent, #000000d5 95%);
+}
+
+#sec1 {
+    color: #ffffff;
+    font-family: netflix;
+
+    width: 100vw;
+    height: 800px;
+}
+
+#logo {
+    width: 200px;
+}
+
+nav #navitens {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 50px;
+}
+
+#navbtns {
+    position: absolute;
+
+    margin-right: 50px;
+    right: 0;
+}
+
+#navbtns select,
+#navbtns button {
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+#navbtns select {
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+
+    margin-right: 20px;
+}
+
+#navbtns select option {
+    background-color: gray;
+}
+
+#navbtns button {
+    background-color: var(--NetRed);
+    color: white;
+    border: none;
+
+    border-radius: 3px;
+}
+
+
+#main-content {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+
+    margin-top: 20vh;
+    max-width: 700px;
+}
+
+#main-content h1 {
+    font-size: 4em;
+}
+
+#main-content h2,
+h3 {
+    margin: 20px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content h2 {
+    font-size: 1.5em;
+}
+
+#main-content h3 {
+    font-size: 1.2em;
+}
+
+#input-email {
+    display: flex;
+}
+
+#input-email #email-label {
+    position: absolute;
+    cursor: text;
+    font-size: 15px;
+
+    padding-left: 12px;
+
+    transform: translateY(25px);
+    transition: 0.2s;
+    color: #8c8c8c;
+}
+
+#input-email #email {
+    width: 600px;
+    height: 70px;
+    padding: 10px 10px 0px;
+    font-size: medium;
+}
+
+#desktop,
+#mobile {
+    background-color: var(--NetRed);
+    color: white;
+    font-family: netflix;
+    border: none;
+
+    width: 300px;
+    font-size: 2em;
+}
+
+#mobile {
+    display: none;
+    margin: auto;
+
+    margin-top: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+
+
+
+    #main-content h1 {
+        font-size: 2em;
+    }
+
+    #input-email #email {
+        width: 100vw;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+}
